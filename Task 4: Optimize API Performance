@@ -1,0 +1,11 @@
+Task 4: Optimize API Performance
+Proposed Optimizations:
+
+Database Indexing: If we were using a database, we would index the ID field for faster lookups.
+
+Caching: Implement response caching for the GET /users endpoint to reduce database hits.
+
+Payload Size: Ensure that the payloads are as small as possible by only sending necessary data.
+
+Code Optimization: Profile the code to find any bottlenecks and optimize them.
+
