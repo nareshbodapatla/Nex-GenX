@@ -1,0 +1,40 @@
+###Login
+POST http://localhost:3000/login/
+
+{
+    "username":"naresh",
+    "password":"naresh"
+}
+
+###create new user
+POST http://localhost:3000/users/
+Authorization: Bearer JTW_TOKEN
+
+{
+    "username":"jeo",
+    "emailid":"jeo@gmail.com",
+    "age":"29"
+}
+
+### get user
+GET http://localhost:3000/users
+Authorization: Bearer JTW_TOKEN
+
+# Get a single user by ID
+GET http://localhost:3000/users/1
+Authorization: Bearer JTW_TOKEN
+
+# Update an existing user
+PUT http://localhost:3000/users/1
+Authorization: Bearer JTW_TOKEN
+Content-Type: application/json
+
+{
+  "username": "jeo",
+  "email": "updateduser@example.com",
+  "age": "29"
+}
+
+# Delete a user
+DELETE http://localhost:3000/users/1
+Authorization: Bearer JTW_TOKEN
