@@ -1,0 +1,33 @@
+Task 1: Requirement Gathering
+Mock Meeting Scenario:
+
+Product Manager: We need an API that allows us to manage a list of users. We should be able to create, read, update, and delete user records. The API should be secure and fast.
+
+Developer: What data should the user records contain? Also, what are the security requirements?
+
+Product Manager: Each user record should include an ID, username, email, and date of birth. For security, we need to implement API key authentication to ensure only authorized clients can access the API.
+
+Developer: Understood. We'll also need to discuss error handling and what kind of responses the API should provide in case of errors.
+
+Product Manager: Yes, please ensure that the API returns appropriate HTTP status codes for different error scenarios.
+
+Documented Requirements:
+
+Functional:
+
+CRUD operations for user records.
+User data: ID, username, email, date of birth.
+Non-functional:
+
+API key authentication for security.
+Appropriate error handling with HTTP status codes.
+Endpoints:
+
+GET /users - List all users.
+GET /users/:id - Get a single user by ID.
+POST /users - Create a new user.
+PUT /users/:id - Update an existing user.
+DELETE /users/:id - Delete a user.
+Data Format: JSON
+
+Security: API key authentication
