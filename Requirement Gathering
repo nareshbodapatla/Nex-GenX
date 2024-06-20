@@ -16,7 +16,7 @@ Documented Requirements:
 Functional:
 
 CRUD operations for user records.
-User data: ID, username, email, date of birth.
+User data: ID, username, email, age.
 Non-functional:
 
 API key authentication for security.
